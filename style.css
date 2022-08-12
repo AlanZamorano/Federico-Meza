@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
+}
+body{
+    background: url(fondo_desk.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2em;
+
+}
+.presentation i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+i{
+    color: black;
+}
+.contact{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 30%;
+}
+.call, .email, .ubicacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+}
+.call p, .email p, .ubicacion p{
+    margin-top: 10px;
+    color: black;
+    text-align: center;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.name h2{
+margin-top: 1em;
+margin-bottom: 0.5em;
+}
+.name img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    margin-top: 3em;
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info{
+    width: 40%;
+    border-bottom: 5px solid rgba(149, 149, 149, 0.2);
+}
+.section{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+li{
+    list-style: none;
+    border: 1px solid rgba(149, 149, 149, 0.5);
+    border-top: none;
+    border-left: 5px solid rgba(149, 149, 149, 0.2);
+    border-right: 2px solid rgba(149, 149, 149, 0.2);
+}
+.container p{
+    margin-top: 5px;
+    color: gray;
+    font-family: "Source Sans Pro Bold", sans-serif !important;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 5rem;
+}
+.presentation i:hover{
+    background-color: rgb(104,191,252, 0.5);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+.add-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 250px;
+    border-radius: 50px;
+    border: 1px solid blue;
+    color: blue;
+}
+.add-contact i{
+    margin-right: 10px;
+    font-size: 1.3rem;
+    color: blue;
+}
+  .h::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  .h:hover{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 1rem;
+  }
+  .h:hover i{
+    margin-right: 2em;
+  }
+  .h:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }  
+  .h::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(200 100% 80%);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+  .h {
+    position: relative;
+  }
+  .add-contact:hover{
+    background-color: rgb(21, 189, 72);
+    color: white;
+    border: none;
+  }
+  .add-contact:hover i{
+    color: white;
+  }
+
+@media screen and (max-width: 900px) and (min-width: 551px) {
+    .contact{
+        width: 60%;
+    }
+    .container{
+        width: 100%;
+    }
+    .info{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 550px) and (min-width:100px) {
+    body{
+        background: url(fondo_movil.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }  
+    .contact{
+        width: 60%;
+    }
+    .info{
+        width: 100%;
+    }
+}
